@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Mahasiswa</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Form HTML</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+<div class="container">
+    <h1>Form Mahasiswa</h1>
+
+    <form>
+
+        <!-- Input Text -->
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+
+        <!-- Password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Masukkan password">
+
+        <!-- Textarea -->
+        <label for="alamat">Alamat</label>
+        <textarea id="alamat" name="alamat" placeholder="Masukkan alamat lengkap"></textarea>
+
+        <!-- Radio Button -->
+        <label>Jenis Kelamin</label>
+        <div class="option">
+            <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki">
+            <label for="laki" style="display:inline; font-weight:normal;">Laki-laki</label>
+        </div>
+
+        <div class="option">
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+            <label for="perempuan" style="display:inline; font-weight:normal;">Perempuan</label>
+        </div>
+
+        <!-- Checkbox -->
+        <label>Hobi</label>
+        <div class="option">
+            <input type="checkbox" id="musik" name="hobi" value="Musik">
+            <label for="musik" style="display:inline; font-weight:normal;">Musik</label>
+        </div>
+
+        <div class="option">
+            <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+            <label for="olahraga" style="display:inline; font-weight:normal;">Olahraga</label>
+        </div>
+
+        <div class="option">
+            <input type="checkbox" id="game" name="hobi" value="Game">
+            <label for="game" style="display:inline; font-weight:normal;">Game</label>
+        </div>
+
+        <!-- Select Option -->
+        <label for="jurusan">Jurusan</label>
+        <select id="jurusan" name="jurusan">
+            <option value="">-- Pilih Jurusan --</option>
+            <option value="Teknologi Informasi">Teknologi Informasi</option>
+            <option value="Teknik Industri">Teknik Industri</option>
+            <option value="Statistika">Statistika</option>
+            <option value="Teknik Sipil">Teknik Sipil</option>
+        </select>
+
+        <!-- Submit -->
+        <input type="submit" value="Kirim">
+
+    </form>
+</div>
+
+</body>
+</html>
